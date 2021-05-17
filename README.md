@@ -56,6 +56,10 @@ Usabilla contains the same, but with different value in its [podspec](https://gi
 ## Solution
 Podspecs should not define `EXCLUDED_ARCHS` in the `user_target_xcconfig` fied of their podspec. 
 
+## Related Issues
+* [Firebase](https://github.com/firebase/firebase-ios-sdk/issues/8092)
+* [Usabilla](https://github.com/usabilla/usabilla-u4a-ios-swift-sdk/issues/219)
+
 ## References
 * [Similar issue in NewRelic](https://discuss.newrelic.com/t/issues-with-pod-install-related-to-excluded-archs/120131/18)
 * [Similar issue](https://groups.google.com/g/ima-sdk/c/_RSd8NMYvRo) [with other Google pods](https://stackoverflow.com/a/66592995/819110)
