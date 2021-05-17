@@ -13,9 +13,12 @@
 		467A06432652A88600F70F97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467A06412652A88600F70F97 /* Main.storyboard */; };
 		467A06452652A88900F70F97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 467A06442652A88900F70F97 /* Assets.xcassets */; };
 		467A06482652A88900F70F97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467A06462652A88900F70F97 /* LaunchScreen.storyboard */; };
+		CDD1457CC0167FD2EC39A232 /* Pods_GTMPodIssueTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C0050BCB4F2C942AF030090 /* Pods_GTMPodIssueTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DA9F9B0990D4AA2293EB185 /* Pods-GTMPodIssueTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTMPodIssueTest.release.xcconfig"; path = "Target Support Files/Pods-GTMPodIssueTest/Pods-GTMPodIssueTest.release.xcconfig"; sourceTree = "<group>"; };
+		3C0050BCB4F2C942AF030090 /* Pods_GTMPodIssueTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GTMPodIssueTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		467A06382652A88600F70F97 /* GTMPodIssueTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GTMPodIssueTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		467A063B2652A88600F70F97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		467A063D2652A88600F70F97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		467A06442652A88900F70F97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		467A06472652A88900F70F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		467A06492652A88900F70F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB7FF8274DE4EFD5BB589ADA /* Pods-GTMPodIssueTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTMPodIssueTest.debug.xcconfig"; path = "Target Support Files/Pods-GTMPodIssueTest/Pods-GTMPodIssueTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDD1457CC0167FD2EC39A232 /* Pods_GTMPodIssueTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		240B1ED97922B319FEF85BC4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C0050BCB4F2C942AF030090 /* Pods_GTMPodIssueTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		467A062F2652A88600F70F97 = {
 			isa = PBXGroup;
 			children = (
 				467A063A2652A88600F70F97 /* GTMPodIssueTest */,
 				467A06392652A88600F70F97 /* Products */,
+				9A52E51799B19D19B46113B6 /* Pods */,
+				240B1ED97922B319FEF85BC4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = GTMPodIssueTest;
 			sourceTree = "<group>";
 		};
+		9A52E51799B19D19B46113B6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB7FF8274DE4EFD5BB589ADA /* Pods-GTMPodIssueTest.debug.xcconfig */,
+				1DA9F9B0990D4AA2293EB185 /* Pods-GTMPodIssueTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 467A064C2652A88900F70F97 /* Build configuration list for PBXNativeTarget "GTMPodIssueTest" */;
 			buildPhases = (
+				311CD0984221A8A15835B837 /* [CP] Check Pods Manifest.lock */,
 				467A06342652A88600F70F97 /* Sources */,
 				467A06352652A88600F70F97 /* Frameworks */,
 				467A06362652A88600F70F97 /* Resources */,
+				F3EAD61056CFDBD29AE52106 /* [CP] Embed Pods Frameworks */,
+				F053F9CCA3F3439E1D0A5067 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +159,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		311CD0984221A8A15835B837 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GTMPodIssueTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F053F9CCA3F3439E1D0A5067 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GTMPodIssueTest/Pods-GTMPodIssueTest-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GTMPodIssueTest/Pods-GTMPodIssueTest-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GTMPodIssueTest/Pods-GTMPodIssueTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3EAD61056CFDBD29AE52106 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GTMPodIssueTest/Pods-GTMPodIssueTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GTMPodIssueTest/Pods-GTMPodIssueTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GTMPodIssueTest/Pods-GTMPodIssueTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		467A06342652A88600F70F97 /* Sources */ = {
@@ -283,6 +370,7 @@
 		};
 		467A064D2652A88900F70F97 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB7FF8274DE4EFD5BB589ADA /* Pods-GTMPodIssueTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +390,7 @@
 		};
 		467A064E2652A88900F70F97 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DA9F9B0990D4AA2293EB185 /* Pods-GTMPodIssueTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
