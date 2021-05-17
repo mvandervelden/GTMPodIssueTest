@@ -93,8 +93,8 @@ PODS:
   - Usabilla (6.7.1)
 
 DEPENDENCIES:
-  - GoogleTagManager
-  - Usabilla
+  - GoogleTagManager (= 7.3.0)
+  - Usabilla (= 6.7.1)
 
 SPEC REPOS:
   trunk:
@@ -129,6 +129,6 @@ SPEC CHECKSUMS:
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   Usabilla: a815a346ce2ef11e55d91cc3be5ddf7923b8596e
 
-PODFILE CHECKSUM: 76a551846deaeee05ed23995b7d921a946e7889e
+PODFILE CHECKSUM: b1411ce7d45c6f572d203b2928acc455e606526a
 
 COCOAPODS: 1.10.1
